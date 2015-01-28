@@ -4,12 +4,16 @@ class k$.Tour
     @cardDiv = document.createElement 'div'
     @cardDiv.classList.add @className
 
-    @cardDiv.innerHTML = 
+    title = if @title then "<header class='tour-header'>#{@title}</header>" else ""
+
+    content =
       """
-      <header class="tour-header">#{title}</header>
+      #{title}
       <main class="tour-main"></main>
       <footer class="tour-footer"><button></button></footer>
       """
+
+    @cardDiv.innerHTML = content
 
   start: ->
     # Restrict click on elements not part of the tour.
