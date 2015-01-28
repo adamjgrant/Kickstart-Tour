@@ -29,7 +29,6 @@ Create a new tour using `k$.Tour`
 
     content: "Click here to submit" # Required
     next: "Got it"
-    previous: "Back"
     top: "30px" # These four map directly to CSS
     bottom: null
     left: "20px"
@@ -44,10 +43,9 @@ Start and Stop the tour with `.start()` and `.stop()`
 
 The tour automatically stops itself on the last step.
 
-Advance the tour with `.next()` and `.previous()`
+Advance the tour with `.next()`
 
     myTour.next()
-    myTour.previous()
 
 ### Styling
 
