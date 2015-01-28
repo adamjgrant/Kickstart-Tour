@@ -8,6 +8,9 @@ Add submodule in lib/coffee/vendor
     $ cd lib/coffee/vendor
     $ git submodule add git@github.com:ajkochanowicz/Kickstart-Tour.git
 
+You'll also need to add the Sass component. This is a separate component in 
+the Kickstart Store.
+
 ## Usage
 
 Create a new tour using `k$.Tour`
