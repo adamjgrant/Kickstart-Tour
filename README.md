@@ -28,11 +28,15 @@ Create a new tour using `k$.Tour`
 ### Each card has several properties. Some are optional.
 
     content: "Click here to submit" # Required
-    next: "Got it"
-    top: "30px" # These four map directly to CSS
+    next: "Got it" # Optional
+    top: "30px" # These four are optional and map directly to CSS
     bottom: null
     left: "20px"
     right: null
+
+    parent: # Optional parent container for the tour card.
+            # Remember to style this parent with position: relative
+            # The passed in element should be a js DOM object.
 
 ### Playing
 
