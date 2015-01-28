@@ -57,7 +57,10 @@ This component still relies on you to instantiate the Kickstart container
 for the tourguide. The class was defined above, when you instantiated a new
 `k$.Tour`
 
+Also include the separate submodule for tour styling.
+
     .myTour {
       @include container;
+      @include tour;
     }
 
